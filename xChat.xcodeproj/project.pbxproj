@@ -15,6 +15,9 @@
 		4CD73DEF2BFF29910063748E /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD73DEE2BFF29910063748E /* RegistrationView.swift */; };
 		4CD73DF32BFF2FF40063748E /* DismissKeyboardOnTapGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD73DF22BFF2FF40063748E /* DismissKeyboardOnTapGesture.swift */; };
 		4CD73DF62BFF39AC0063748E /* CustomTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD73DF52BFF39AC0063748E /* CustomTextFieldView.swift */; };
+		4CD73DF92BFF48080063748E /* AuthenticationHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD73DF82BFF48080063748E /* AuthenticationHeaderView.swift */; };
+		4CD73DFB2BFF4A770063748E /* AuthenticationMainButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD73DFA2BFF4A770063748E /* AuthenticationMainButtonView.swift */; };
+		4CD73DFD2BFF4B1A0063748E /* AuthenticationBottomNavLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD73DFC2BFF4B1A0063748E /* AuthenticationBottomNavLinkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		4CD73DEE2BFF29910063748E /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		4CD73DF22BFF2FF40063748E /* DismissKeyboardOnTapGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissKeyboardOnTapGesture.swift; sourceTree = "<group>"; };
 		4CD73DF52BFF39AC0063748E /* CustomTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldView.swift; sourceTree = "<group>"; };
+		4CD73DF82BFF48080063748E /* AuthenticationHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationHeaderView.swift; sourceTree = "<group>"; };
+		4CD73DFA2BFF4A770063748E /* AuthenticationMainButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationMainButtonView.swift; sourceTree = "<group>"; };
+		4CD73DFC2BFF4B1A0063748E /* AuthenticationBottomNavLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationBottomNavLinkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,7 @@
 		4CD73DEB2BFF29700063748E /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				4CD73DF72BFF47EE0063748E /* Common */,
 				4CD73DEC2BFF29870063748E /* LoginView.swift */,
 				4CD73DEE2BFF29910063748E /* RegistrationView.swift */,
 			);
@@ -149,6 +156,16 @@
 				4CD73DF52BFF39AC0063748E /* CustomTextFieldView.swift */,
 			);
 			path = CustomTextField;
+			sourceTree = "<group>";
+		};
+		4CD73DF72BFF47EE0063748E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4CD73DF82BFF48080063748E /* AuthenticationHeaderView.swift */,
+				4CD73DFA2BFF4A770063748E /* AuthenticationMainButtonView.swift */,
+				4CD73DFC2BFF4B1A0063748E /* AuthenticationBottomNavLinkView.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,7 +243,10 @@
 				4CD73DD92BFF28C80063748E /* xChatApp.swift in Sources */,
 				4CD73DF32BFF2FF40063748E /* DismissKeyboardOnTapGesture.swift in Sources */,
 				4CD73DEF2BFF29910063748E /* RegistrationView.swift in Sources */,
+				4CD73DFD2BFF4B1A0063748E /* AuthenticationBottomNavLinkView.swift in Sources */,
+				4CD73DFB2BFF4A770063748E /* AuthenticationMainButtonView.swift in Sources */,
 				4CD73DF62BFF39AC0063748E /* CustomTextFieldView.swift in Sources */,
+				4CD73DF92BFF48080063748E /* AuthenticationHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

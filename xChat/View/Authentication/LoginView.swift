@@ -12,75 +12,46 @@ struct LoginView: View {
     @State private var password = ""
     @Environment(\.colorScheme) var colorScheme
     var body: some View {
-        ZStack {
-            NavigationStack {
-                VStack {
-                    VStack {
-                        VStack(alignment: .leading) {
-                            Text(Constants.Text.title1)
-                                .foregroundStyle(colorScheme == .dark ? Constants.Colors.foregroundDark : Constants.Colors.foregroundLight)
-                            Text(Constants.Text.title2)
-                                .foregroundStyle(Constants.Colors.titleForeground)
-                        }
-                        .font(.largeTitle)
-                        .fontWeight(.bold)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding()
-                        .padding(.top)
-                    }
-                    
-                    VStack {
-                        CustomTextFieldView(value: $email, imageName: "envelope", titleText: "Email")
-                        CustomTextFieldView(value: $password, imageName: "lock", titleText: "Password", isSecure: true)
-                    }
-                    .padding()
-                    .foregroundStyle(Constants.Colors.textFieldBackground)
-                    
-                    NavigationLink {} label: {
-                        Text("Forgot Password?")
-                            .font(.callout)
-                            .fontWeight(.semibold)
-                    }
-                    .frame(maxWidth: .infinity, alignment: .trailing)
-                    .padding(.horizontal)
-                    
-                    Button {
-                        print("Debug: Sign in button pressed")
-                    } label: {
-                        Text("Sign in")
-                            .frame(maxWidth: .infinity)
-                            .padding()
-                            .background(.blue)
-                            .clipShape(Capsule())
-                            .padding()
-                            .foregroundStyle(.white)
-                            .shadow(color: .black, radius: 4)
-                    }
-                    
-                    Spacer()
-                    
-                    NavigationLink(destination: {}) {
-                        HStack {
-                            Text("Don't have an account? ")
-                                .font(.system(size: 14)) +
-                                Text("Sign Up")
-                                .font(.system(size: 14, weight: .semibold))
-                        }
-                        .foregroundStyle(.blue)
-                    }
+        NavigationStack {
+            VStack {
+                AuthenticationHeaderView(titleIntro: "Hello.", titleMain: "Welcome Back")
+                textFieldView
+                forgetPasswordLink
+                AuthenticationMainButtonView(buttonTitle: "Sign in")
+                Spacer()
+                AuthenticationBottomNavLinkView(titlePart1: "Don't have an account?", titlePart2: "Sign Up") {
+                    RegistrationView()
                 }
-                .dismissKeyboardOnTap()
             }
         }
         .dismissKeyboardOnTap()
     }
     
-    private enum Constants {
-        enum Text {
-            static let title1 = "Hello."
-            static let title2 = "Welcome Back"
+    private var textFieldView: some View {
+        VStack {
+            CustomTextFieldView(value: $email,
+                                imageName: "envelope",
+                                titleText: "Email")
+            CustomTextFieldView(value: $password,
+                                imageName: "lock",
+                                titleText: "Password",
+                                isSecure: true)
         }
-        
+        .padding()
+        .foregroundStyle(Constants.Colors.textFieldBackground)
+    }
+    
+    private var forgetPasswordLink: some View {
+        NavigationLink {} label: {
+            Text("Forgot Password?")
+                .font(.callout)
+                .fontWeight(.semibold)
+        }
+        .frame(maxWidth: .infinity, alignment: .trailing)
+        .padding(.horizontal)
+    }
+    
+    private enum Constants {
         enum Layout {
             static let spacingTextFieldVStack: CGFloat = 16.0
             static let spacingTextFieldHStack: CGFloat = 20.0

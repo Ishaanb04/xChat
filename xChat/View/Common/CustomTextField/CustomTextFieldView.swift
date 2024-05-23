@@ -35,6 +35,7 @@ struct CustomTextFieldView: View {
                         .textInputAutocapitalization(.never)
                 }
             }
+            .frame(height: 25)
             Divider()
                 .background(Constants.Colors.textFieldBackground)
         }
