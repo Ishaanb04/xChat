@@ -15,9 +15,11 @@ struct EditProfileStatusView: View {
                 .padding([.top, .horizontal])
                 .foregroundColor(.gray)
             // Actual Status
-            NavigationLink {} label: {
+            NavigationLink {
+                StatusSelectorView(statusViewModel: StatusSelectorViewModel())
+            } label: {
                 HStack {
-                    Text("At the movies")
+                    Text(StatusSelectorOptions.atSchool.title)
                         .foregroundStyle(.blue)
                     Spacer()
                     Image(systemName: "chevron.right")

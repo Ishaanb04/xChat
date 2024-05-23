@@ -35,7 +35,7 @@ struct SettingsView: View {
         }
         .foregroundStyle(.black)
         .background(
-            Color(.systemGroupedBackground))
+            Color(.secondarySystemBackground))
     }
 }
 

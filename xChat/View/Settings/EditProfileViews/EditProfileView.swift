@@ -11,7 +11,7 @@ struct EditProfileView: View {
     @State var fullName = "Ishaan"
     var body: some View {
         ZStack {
-            Color(.systemGroupedBackground)
+            Color(.secondarySystemBackground)
                 .ignoresSafeArea()
             VStack {
                 // header
@@ -25,8 +25,6 @@ struct EditProfileView: View {
             }
             .navigationBarTitleDisplayMode(.inline)
             .navigationTitle("Edit Profile")
-//            .background(
-//                Color(.systemGroupedBackground))
         }
         .dismissKeyboardOnTap()
     }
