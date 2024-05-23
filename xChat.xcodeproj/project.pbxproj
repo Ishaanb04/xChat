@@ -11,6 +11,10 @@
 		4CD73DDB2BFF28C80063748E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD73DDA2BFF28C80063748E /* ContentView.swift */; };
 		4CD73DDD2BFF28CA0063748E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD73DDC2BFF28CA0063748E /* Assets.xcassets */; };
 		4CD73DE02BFF28CA0063748E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD73DDF2BFF28CA0063748E /* Preview Assets.xcassets */; };
+		4CD73DED2BFF29870063748E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD73DEC2BFF29870063748E /* LoginView.swift */; };
+		4CD73DEF2BFF29910063748E /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD73DEE2BFF29910063748E /* RegistrationView.swift */; };
+		4CD73DF32BFF2FF40063748E /* DismissKeyboardOnTapGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD73DF22BFF2FF40063748E /* DismissKeyboardOnTapGesture.swift */; };
+		4CD73DF62BFF39AC0063748E /* CustomTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD73DF52BFF39AC0063748E /* CustomTextFieldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		4CD73DDA2BFF28C80063748E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4CD73DDC2BFF28CA0063748E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CD73DDF2BFF28CA0063748E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4CD73DEC2BFF29870063748E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		4CD73DEE2BFF29910063748E /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		4CD73DF22BFF2FF40063748E /* DismissKeyboardOnTapGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissKeyboardOnTapGesture.swift; sourceTree = "<group>"; };
+		4CD73DF52BFF39AC0063748E /* CustomTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,11 @@
 		4CD73DD72BFF28C80063748E /* xChat */ = {
 			isa = PBXGroup;
 			children = (
+				4CD73DEA2BFF293D0063748E /* Model */,
+				4CD73DE92BFF293B0063748E /* View */,
+				4CD73DE82BFF29390063748E /* ViewModel */,
+				4CD73DE72BFF29370063748E /* API */,
+				4CD73DE62BFF29330063748E /* Utils */,
 				4CD73DD82BFF28C80063748E /* xChatApp.swift */,
 				4CD73DDA2BFF28C80063748E /* ContentView.swift */,
 				4CD73DDC2BFF28CA0063748E /* Assets.xcassets */,
@@ -65,6 +78,77 @@
 				4CD73DDF2BFF28CA0063748E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4CD73DE62BFF29330063748E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4CD73DE72BFF29370063748E /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		4CD73DE82BFF29390063748E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4CD73DE92BFF293B0063748E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4CD73DF02BFF2FC00063748E /* Common */,
+				4CD73DEB2BFF29700063748E /* Authentication */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4CD73DEA2BFF293D0063748E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4CD73DEB2BFF29700063748E /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				4CD73DEC2BFF29870063748E /* LoginView.swift */,
+				4CD73DEE2BFF29910063748E /* RegistrationView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		4CD73DF02BFF2FC00063748E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4CD73DF42BFF398E0063748E /* CustomTextField */,
+				4CD73DF12BFF2FCB0063748E /* ViewModifier */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4CD73DF12BFF2FCB0063748E /* ViewModifier */ = {
+			isa = PBXGroup;
+			children = (
+				4CD73DF22BFF2FF40063748E /* DismissKeyboardOnTapGesture.swift */,
+			);
+			path = ViewModifier;
+			sourceTree = "<group>";
+		};
+		4CD73DF42BFF398E0063748E /* CustomTextField */ = {
+			isa = PBXGroup;
+			children = (
+				4CD73DF52BFF39AC0063748E /* CustomTextFieldView.swift */,
+			);
+			path = CustomTextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +221,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CD73DED2BFF29870063748E /* LoginView.swift in Sources */,
 				4CD73DDB2BFF28C80063748E /* ContentView.swift in Sources */,
 				4CD73DD92BFF28C80063748E /* xChatApp.swift in Sources */,
+				4CD73DF32BFF2FF40063748E /* DismissKeyboardOnTapGesture.swift in Sources */,
+				4CD73DEF2BFF29910063748E /* RegistrationView.swift in Sources */,
+				4CD73DF62BFF39AC0063748E /* CustomTextFieldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
