@@ -1,5 +1,5 @@
 //
-//  SettingsCellViewModel.swift
+//  SettingsCellOptions.swift
 //  xChat
 //
 //  Created by Ishaan Bhasin on 5/23/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum SettingsCellViewModel: Int, CaseIterable, Identifiable {
+enum SettingsCellOptions: Int, CaseIterable, Identifiable {
     case account
     case notification
     case starredMessages

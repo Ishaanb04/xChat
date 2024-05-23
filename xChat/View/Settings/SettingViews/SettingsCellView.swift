@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SettingsCellView: View {
-    var cell: SettingsCellViewModel
+    var cell: SettingsCellOptions
 
     var body: some View {
         VStack {

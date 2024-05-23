@@ -20,6 +20,7 @@ struct SettingsHeaderView: View {
             VStack(alignment: .leading, spacing: 4) {
                 Text("Ishaan Bhasin")
                     .font(.system(size: 18))
+                    .foregroundStyle(.black)
                 Text("Availible")
                     .foregroundStyle(.gray)
                     .font(.system(size: 14))
@@ -30,6 +31,7 @@ struct SettingsHeaderView: View {
         .frame(height: 80)
         .background(Color.white)
         .padding(.top)
+        
     }
 }
 

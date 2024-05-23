@@ -10,10 +10,14 @@ import SwiftUI
 struct SettingsView: View {
     var body: some View {
         VStack(spacing: 25) {
-            SettingsHeaderView()
+            NavigationLink {
+                EditProfileView()
+            } label: {
+                SettingsHeaderView()
+            }
 
             VStack(spacing: 0) {
-                ForEach(SettingsCellViewModel.allCases) { cell in
+                ForEach(SettingsCellOptions.allCases) { cell in
                     SettingsCellView(cell: cell)
                 }
             }
@@ -29,6 +33,7 @@ struct SettingsView: View {
 
             Spacer()
         }
+        .foregroundStyle(.black)
         .background(
             Color(.systemGroupedBackground))
     }
