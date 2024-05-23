@@ -18,6 +18,14 @@
 		4CD73DF92BFF48080063748E /* AuthenticationHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD73DF82BFF48080063748E /* AuthenticationHeaderView.swift */; };
 		4CD73DFB2BFF4A770063748E /* AuthenticationMainButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD73DFA2BFF4A770063748E /* AuthenticationMainButtonView.swift */; };
 		4CD73DFD2BFF4B1A0063748E /* AuthenticationBottomNavLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD73DFC2BFF4B1A0063748E /* AuthenticationBottomNavLinkView.swift */; };
+		4CD73E002BFF58560063748E /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD73DFF2BFF58560063748E /* MainTabView.swift */; };
+		4CD73E052BFF5A270063748E /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD73E042BFF5A270063748E /* ChatView.swift */; };
+		4CD73E082BFF5A390063748E /* ConversationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD73E072BFF5A390063748E /* ConversationView.swift */; };
+		4CD73E0A2BFF5A420063748E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD73E092BFF5A420063748E /* SettingsView.swift */; };
+		4CD73E0C2BFF5A600063748E /* ChannelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD73E0B2BFF5A600063748E /* ChannelsView.swift */; };
+		4CD73E0E2BFF620F0063748E /* SettingsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD73E0D2BFF620F0063748E /* SettingsHeaderView.swift */; };
+		4CD73E102BFF62AA0063748E /* SettingsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD73E0F2BFF62AA0063748E /* SettingsCellView.swift */; };
+		4CD73E132BFF65F00063748E /* SettingsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD73E122BFF65F00063748E /* SettingsCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +41,14 @@
 		4CD73DF82BFF48080063748E /* AuthenticationHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationHeaderView.swift; sourceTree = "<group>"; };
 		4CD73DFA2BFF4A770063748E /* AuthenticationMainButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationMainButtonView.swift; sourceTree = "<group>"; };
 		4CD73DFC2BFF4B1A0063748E /* AuthenticationBottomNavLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationBottomNavLinkView.swift; sourceTree = "<group>"; };
+		4CD73DFF2BFF58560063748E /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		4CD73E042BFF5A270063748E /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		4CD73E072BFF5A390063748E /* ConversationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationView.swift; sourceTree = "<group>"; };
+		4CD73E092BFF5A420063748E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		4CD73E0B2BFF5A600063748E /* ChannelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsView.swift; sourceTree = "<group>"; };
+		4CD73E0D2BFF620F0063748E /* SettingsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsHeaderView.swift; sourceTree = "<group>"; };
+		4CD73E0F2BFF62AA0063748E /* SettingsCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCellView.swift; sourceTree = "<group>"; };
+		4CD73E122BFF65F00063748E /* SettingsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +119,7 @@
 		4CD73DE82BFF29390063748E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				4CD73E122BFF65F00063748E /* SettingsCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -110,8 +127,13 @@
 		4CD73DE92BFF293B0063748E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4CD73DF02BFF2FC00063748E /* Common */,
+				4CD73E062BFF5A2A0063748E /* Conversations */,
 				4CD73DEB2BFF29700063748E /* Authentication */,
+				4CD73E022BFF59920063748E /* Channels */,
+				4CD73E012BFF598C0063748E /* Chats */,
+				4CD73DF02BFF2FC00063748E /* Common */,
+				4CD73DFE2BFF584B0063748E /* Main */,
+				4CD73E032BFF59980063748E /* Settings */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -166,6 +188,48 @@
 				4CD73DFC2BFF4B1A0063748E /* AuthenticationBottomNavLinkView.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		4CD73DFE2BFF584B0063748E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4CD73DFF2BFF58560063748E /* MainTabView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4CD73E012BFF598C0063748E /* Chats */ = {
+			isa = PBXGroup;
+			children = (
+				4CD73E042BFF5A270063748E /* ChatView.swift */,
+			);
+			path = Chats;
+			sourceTree = "<group>";
+		};
+		4CD73E022BFF59920063748E /* Channels */ = {
+			isa = PBXGroup;
+			children = (
+				4CD73E0B2BFF5A600063748E /* ChannelsView.swift */,
+			);
+			path = Channels;
+			sourceTree = "<group>";
+		};
+		4CD73E032BFF59980063748E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				4CD73E092BFF5A420063748E /* SettingsView.swift */,
+				4CD73E0D2BFF620F0063748E /* SettingsHeaderView.swift */,
+				4CD73E0F2BFF62AA0063748E /* SettingsCellView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		4CD73E062BFF5A2A0063748E /* Conversations */ = {
+			isa = PBXGroup;
+			children = (
+				4CD73E072BFF5A390063748E /* ConversationView.swift */,
+			);
+			path = Conversations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,11 +306,19 @@
 				4CD73DDB2BFF28C80063748E /* ContentView.swift in Sources */,
 				4CD73DD92BFF28C80063748E /* xChatApp.swift in Sources */,
 				4CD73DF32BFF2FF40063748E /* DismissKeyboardOnTapGesture.swift in Sources */,
+				4CD73E052BFF5A270063748E /* ChatView.swift in Sources */,
 				4CD73DEF2BFF29910063748E /* RegistrationView.swift in Sources */,
 				4CD73DFD2BFF4B1A0063748E /* AuthenticationBottomNavLinkView.swift in Sources */,
 				4CD73DFB2BFF4A770063748E /* AuthenticationMainButtonView.swift in Sources */,
+				4CD73E0C2BFF5A600063748E /* ChannelsView.swift in Sources */,
 				4CD73DF62BFF39AC0063748E /* CustomTextFieldView.swift in Sources */,
 				4CD73DF92BFF48080063748E /* AuthenticationHeaderView.swift in Sources */,
+				4CD73E132BFF65F00063748E /* SettingsCellViewModel.swift in Sources */,
+				4CD73E002BFF58560063748E /* MainTabView.swift in Sources */,
+				4CD73E0E2BFF620F0063748E /* SettingsHeaderView.swift in Sources */,
+				4CD73E102BFF62AA0063748E /* SettingsCellView.swift in Sources */,
+				4CD73E082BFF5A390063748E /* ConversationView.swift in Sources */,
+				4CD73E0A2BFF5A420063748E /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
