@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C38B7AC2C01AAE6001EC25F /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C38B7AB2C01AAE6001EC25F /* ImagePicker.swift */; };
 		4CD73DD92BFF28C80063748E /* xChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD73DD82BFF28C80063748E /* xChatApp.swift */; };
 		4CD73DDB2BFF28C80063748E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD73DDA2BFF28C80063748E /* ContentView.swift */; };
 		4CD73DDD2BFF28CA0063748E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD73DDC2BFF28CA0063748E /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C38B7AB2C01AAE6001EC25F /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		4CD73DD52BFF28C80063748E /* xChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD73DD82BFF28C80063748E /* xChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xChatApp.swift; sourceTree = "<group>"; };
 		4CD73DDA2BFF28C80063748E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 		4CD73DE62BFF29330063748E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				4C38B7AB2C01AAE6001EC25F /* ImagePicker.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 			files = (
 				4CD73E242BFF7FE80063748E /* StatusSelectorCell.swift in Sources */,
 				4CD73E152BFF6AD30063748E /* EditProfileView.swift in Sources */,
+				4C38B7AC2C01AAE6001EC25F /* ImagePicker.swift in Sources */,
 				4CD73DED2BFF29870063748E /* LoginView.swift in Sources */,
 				4CD73DDB2BFF28C80063748E /* ContentView.swift in Sources */,
 				4CD73DD92BFF28C80063748E /* xChatApp.swift in Sources */,

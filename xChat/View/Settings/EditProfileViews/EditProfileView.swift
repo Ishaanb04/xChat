@@ -9,6 +9,7 @@ import SwiftUI
 
 struct EditProfileView: View {
     @State var fullName = "Ishaan"
+    
     var body: some View {
         ZStack {
             Color(.secondarySystemBackground)
